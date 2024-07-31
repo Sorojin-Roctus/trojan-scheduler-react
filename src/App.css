@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* fix footer */
+
+#root .ui.container.main-content {
+  min-height: 100vh;
+  padding-top: 7em;
+  padding-bottom: 8em;
+}
+
+#root .ui.segment.footer {
+  height: 5em;
+  line-height: 5em;
+  padding: 0;
+  margin-top: -5em;
+}
+
+/* RBC styles */
+
+.rbc-header {
+  border-bottom: none !important;
+}
+
+.rbc-time-view .rbc-allday-cell {
+  display: none;
+}
+
+.rbc-day-slot .rbc-event {
+  border: none !important;
+}
+
+.rbc-event {
+  background-color: #2185d0 !important;
+}
+
+/* fix schedule page avatar */
+
+.ui.items:not(.unstackable) > .item > .image.schedule-user-avatar > img {
+  width: 80px !important;
+}
+
+/* schedule and task button groups */
+
+.schedule-button {
+  box-sizing: border-box;
+  margin-right: 0.8% !important;
+  width: 19.2%;
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+
+.task-button {
+  box-sizing: border-box;
+  margin-right: 0.8% !important;
+  width: 32%;
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+
+/* toast min width */
+.ui-alerts {
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui-alerts {
+    min-width: 80%;
+  }
+}
+
+/* fix stacked field margin */
+
+@media only screen and (max-width: 767px) {
+  .ui.form:not(.unstackable) .fields:not(.unstackable) .field:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+/* fix account page segment padding */
+
+@media only screen and (max-width: 767px) {
+  .ui.dynamic.very.padded.segment {
+    padding: 1em;
+  }
+  .ui.dynamic.padded.segment {
+    padding: 1em;
+  }
+}
+
+/* lading page styling */
+
+.ui.inverted.segment.landing-page-segment {
+  background: linear-gradient(
+    0deg,
+    rgba(27, 28, 29, 1) 0%,
+    rgba(35, 36, 37, 1) 45%,
+    rgba(27, 28, 29, 1) 89%
+  );
+}
+
+/* text page text formatting */
+
+.ui.segment.larger-text p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* larger dropdown menu */
+
+.ui.menu .ui.dropdown.item .menu.large-dropdown {
+  border-radius: 0 0.28571429rem 0.28571429rem 0.28571429rem;
+}
+
+.ui.menu .ui.dropdown.item .menu.large-dropdown .item {
+  line-height: 3em;
+}
